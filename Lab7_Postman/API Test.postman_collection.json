@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "58e78f84-1a29-4775-a27d-e706376d433b",
+		"name": "API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49304334",
+		"_collection_link": "https://descent-module-technologist-46573948-4295360.postman.co/workspace/Duc-Nguyen-Minh's-Workspace~4dbabcd8-ed67-474f-8d1b-0e1ba7ea7cb5/collection/49304334-58e78f84-1a29-4775-a27d-e706376d433b?action=share&source=collection_link&creator=49304334"
+	},
+	"item": [
+		{
+			"name": "Get Rnd Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
